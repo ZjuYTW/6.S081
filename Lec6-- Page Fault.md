@@ -5,10 +5,10 @@ Two advantages:
 * Isolations: Because of the exist of `satp`, two different processes can't visit other's physical memory
 * Memory Indirection: The mapping from va -> pa, provides us many interesting features like, page fault, demanding, lazy allocation...
 
-### srbk()
+### sbrk()
 Grow(or shrink) the heap from lower to higher place(or h -> l)
 Two allocations methods:  
-* Eager Allocation: Allocate the memory immediately once srbk() is called.
+* Eager Allocation: Allocate the memory immediately once sbrk() is called.
 * Lazy Allocation: Allocate the memory only when the memory is used(writed).
 
 But the situation is that many programmer don't know the exact space they need, so they tend to allocate the maximum space. -> lazy allocation is better.  
