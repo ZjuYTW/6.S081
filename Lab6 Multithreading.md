@@ -25,7 +25,28 @@ struct thread_context{
   uint64 s11;
 };
 ```
-Like the kernel does in kernel/swtch.S(), we copy the context switch assembly code just to save `ra, sp and callee saved registers`.
+Like what kernel does in kernel/swtch.S(), we copy the context switch assembly code to save `ra, sp and callee saved registers`.  
+
 In our implementation, `ra` is used to store the return address of thread_switch.S namely the last switch out point's address. Cooperates with ra, `sp` provides stack pointer points to stack which stores more variables on stack.
 
-So
+Finally, we have to define where `ra` and `sp` starts.  
+D note `sp` grows from high to low, so we need to set `sp = &state` and `ra` as the address of `func`
+
+### Using thread
+Last two sections require us to do coding on pthread. Some main API are following:
+```cpp
+pthread_mutex_t lock;            // declare a lock
+pthread_mutex_init(&lock, NULL); // initialize the lock
+pthread_mutex_lock(&lock);       // acquire lock
+pthread_mutex_unlock(&lock);     // release lock
+pthread_cond_wait(&cond, &mutex);  // go to sleep on cond, releasing lock mutex, acquiring upon wake up
+pthread_cond_broadcast(&cond);     // wake up every thread sleeping on cond
+```
+
+Actually I don't want talk much about these because they are so easy for me? Maybe `Barrier`  is worthy a concise description.
+
+To make all threads block till all of them synchronize at one point, we need `pthread_cond_wait()` and `pthread_cond_broadcase()`.  
+
+In each round, if reached thread number are not enough, then they call `cond_wait()` to release the lock and sleep. Till the last thread reaches, it increment round and set 0 the thread counter then `cond_broadcast()`.
+
+Note, don't forget to unlock properly.
