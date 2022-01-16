@@ -93,4 +93,3 @@ If the crash happens after `logheader` is write, then when rebooting, xv6 will f
     * If the transaction number exceeds limit, it falls into sleep until other transactions are done.
     * And all the other concurrent fs calls maybe commit together, called `group commit` as a single big transaction commit
   * A more general way maybe before adding one more fs transaction, do block number size check first.
-* 
