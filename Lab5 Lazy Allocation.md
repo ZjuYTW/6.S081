@@ -12,7 +12,7 @@ But we should note that the parameter `n` can be arbitary number, either `+ or -
 The time to truely allocate a page, is when kernel receives a `No.13 or 15` exception, which tells the kernel a non-PTE_V page is being accessed. If the page is lazy allocated but not been truely allocated yet, we should do the allocation and return to the same instruction in the user mode.
 
 We should check the boundary case, that if  
-* va $\in$ [0, p->sz) (Exclusively contain! Important)
+* va $\in$ [0, p->sz) (Exclusively contain! **Important**)
 * va $\notin$ guard page range  
 
 
@@ -44,6 +44,7 @@ Note that in the original implementation of xv6, we do the eager allocation, whi
 
 Last, in the `sbrkarg` test, it tests the copyin and copyout functions.
 Because in the kernel mode, kernel simulates the dereference process by `walkaddr`, it won't cause a exception. So we should manually modify the function and add a allocation to it.
+
 ```c
 va0 = PGROUNDDOWN(dstva);
 if(check_valid(va0) && ((pte = walk(pagetable, va0, 0)) == 0 || (*pte & PTE_V) == 0)){
@@ -57,4 +58,4 @@ if(check_valid(va0) && ((pte = walk(pagetable, va0, 0)) == 0 || (*pte & PTE_V) =
 * The way to decide whether a `va` is in the guard page, I use `if(va < PGROUNDDOWN(p->trapframe->sp))`. 
   * I saw some other's blog says could use `r_sp()`, but it just return the kernel stack pointer...
 * Don't forget to add codes on copyin, copyout and copyinstr.
- 
+
