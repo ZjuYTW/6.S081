@@ -1,4 +1,16 @@
-## Lab6 -- Multithreading
+---
+title: MIT6.S081 Lab9
+data: 2022/01/5
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
+## Lab9 -- Multithreading
 
 ### User thread implementation
 In this section, we will implement a user-level thread. Like many user-level thread libraries do, it should have its own 

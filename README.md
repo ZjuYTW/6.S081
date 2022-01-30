@@ -2,5 +2,9 @@
 
 A new beginning of learning Operating System!
 
-This time hopefully I can build a simple OS based on xv6. I will post my lab notes on this repository at the same time.
+All labs are finished! 
+
+The notes are all posted on [github](https://github.com/ZjuYTW/6.S081) and my [blog](https://zjuytw.github.io/)
+
+Still many to learn... 
 

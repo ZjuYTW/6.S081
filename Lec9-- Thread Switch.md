@@ -1,4 +1,17 @@
+---
+title: MIT6.S081 Lecture10 Thread Switch
+data: 2021/12/12
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 ## Thread Switch
+
 This lecture talks about xv6's mechanism of thread switching.  
 ### Background knowledge
 Thread : one serial execution, it should have its own `pc`, `registers` and `stack`. The scheduling system focus on the interleave multiple threads. There are two main methods to get this done, the first is using multi-cores and the second is to switch.

@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lec7 Page Fault
+data: 2021/12/03
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ## Page Fault
 
 ### Virtual Memory

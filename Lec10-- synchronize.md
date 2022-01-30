@@ -1,3 +1,15 @@
+---
+title: MIT6.S081 Lecture11 Machinery about synchronize
+data: 2021/12/16
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 ## Lec10 Machinery about synchronize
 
 Today's lecture talks about some synchronize mechanism, from lock, condition to wait to give a clear concept of what these mechanisms really effect.

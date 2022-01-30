@@ -1,4 +1,15 @@
+---
+title: MIT6.S081 Lecture12 File system on xv6
+data: 2021/12/20
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ## File system on xv6
+
 ### File system features
 * Abstraction
 * Crash Safety

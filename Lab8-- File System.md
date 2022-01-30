@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lab8
+data: 2021/12/30
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ### Lab8 file system
 
 #### Large files

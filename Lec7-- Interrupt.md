@@ -1,3 +1,15 @@
+---
+title: MIT6.S081 Lecture8 Interrupt
+data: 2021/12/05
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 ## Interrupt
 
 ### RISCV interrupt-related registers
@@ -22,6 +34,7 @@ In the RISCV xv6, external devices are running parallelly with kernel and contro
 * Programming devices
   * device can be difficult to program
   
+
 Refer to xv6-book, we have the definition of driver:
 > Many device drivers execute code in two contexts: a top half that runs in a process’s kernel
 thread, and a bottom half that executes at interrupt time. The top half is called via system calls

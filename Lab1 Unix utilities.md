@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lab1
+data: 2021/7/21
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 <h1>Xv6 and Unix utilities</h1>
 
 In this lab, we gonna implement many interesting and useful programs like, `sleep, pingpong, primes, find, and xargs `. There are some points I want to emphasize, though this lab is not so hard.

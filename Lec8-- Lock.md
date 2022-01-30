@@ -1,4 +1,17 @@
+---
+title: MIT6.S081 Lecture9 Lock
+data: 2021/12/10
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 ## Locks
+
 This lecture talks about locks, I believe many people already have the concept of locks. So I just skip the very beginning of the lecture.
 
 ### Basic lock guideline

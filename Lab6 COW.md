@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lab6
+data: 2021/12/22
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ## Lab6 COW
 
 ### Copy-on-write on xv6

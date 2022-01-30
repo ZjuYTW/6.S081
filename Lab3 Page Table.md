@@ -1,4 +1,17 @@
+---
+title: MIT6.S081 Lab3
+data: 2021/10/1
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 ## Lab3 pagetable
+
  In this lab, we will modify the pagetable, and finally be able to dereference pointers in the kernel mode.
 
  ### Lab1--Print page table

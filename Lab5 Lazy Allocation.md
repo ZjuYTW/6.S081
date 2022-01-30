@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lab5
+data: 2021/12/20
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ## Lab 5 Lazy Allocation
 
 In this lab, we gonna implement `lazy allocation` which means delay the true memory allocation till we actually needs it.

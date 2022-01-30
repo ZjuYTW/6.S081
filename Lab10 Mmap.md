@@ -1,4 +1,16 @@
-### Lab10 mmap
+---
+title: MIT6.S081 Lab10
+data: 2022/01/10
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
+### Lab10 Mmap
 
 In this lab,  we need to develop a `weak` `mmap(void* addr, size_t length, int prot, int flags, int fd, off_t offset)`, which have no designated `addr` and `prot` and `flags` are also limited to `READ, WRITE and both` and `SHARED and PRIVATE`. 
 

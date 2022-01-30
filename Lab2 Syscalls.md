@@ -1,3 +1,15 @@
+---
+title: MIT6.S081 Lab2
+data: 2021/9/24
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 <h1>System Calls(pending the challenge)</h1>
 
 In the lab, we will get deeper into OS than the previous one. We are about to implement the 'bridge' between user and kernel mode, then implement two specific `syscall` to be called by user's program.

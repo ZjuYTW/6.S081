@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lab11
+data: 2022/01/20
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ### Networking
 
 In this lab, we will program on **NIC** driver to control packet receive and transmit process. Because the lab has a detailed description of how to do the lab, I'll just put on our code and explain some key points in the lab.

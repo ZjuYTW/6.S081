@@ -1,6 +1,16 @@
-## Lab -- Lock
+---
+title: MIT6.S081 Lab7
+data: 2021/12/28
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
 
-### Memory allocator
+### Lab7 Lock
+
+#### Memory allocator
 
 This section is to make `kalloc` and `kfree` parallelly performed. The main idea is the free-list is shared among all CPUs so all CPUs need to serialize the allocation that we could improve this process by maintaining multiple `freelist` on different CPU.
 
@@ -14,7 +24,7 @@ If you add lock properly, this lab won't be a big problem.
 
 
 
-### Buffer cache
+#### Buffer cache
 
 Before starting the lab, xv6 book 8.2 to 8.3 section is definitely worthy reading. Namely, buffer cache is a layer between `disk` and `logging`  and its exposed API is `bwrite()` and `bread()`.  Because not like `kalloc` after allocation the page is in charge of single process,  bcache's buffer will be shared among all CPU and we can't split them.
 

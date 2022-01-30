@@ -1,3 +1,15 @@
+---
+title: MIT6.S081 Lecture13 Crash Recovery
+data: 2021/12/23
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
 ### Crash Recovery
 
 #### Logging

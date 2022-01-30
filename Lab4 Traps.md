@@ -1,3 +1,13 @@
+---
+title: MIT6.S081 Lab4
+data: 2021/12/13
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ## Lab4
 
 ### Part2 --Backtrace
@@ -32,4 +42,3 @@ By modifing the address of `pc`, we could jump to the handler. But the way jump 
 * p->trapframe->epc points to the return address once the process jumps from kernel
 * Record as many as possible register in the `proc` especially `pc, sp, ra` and so on.
 * add backtrace() in `panic()` so that whenever a panic happens, it will print a backtrace information.
-  

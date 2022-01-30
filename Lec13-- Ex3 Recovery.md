@@ -1,4 +1,16 @@
-### Linux ex3fs crash recovery system
+---
+title: MIT6.S081 Lecture14 Ext3fs crash recovery
+data: 2021/12/28
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
+
+
+### Linux ext3fs crash recovery system
 
 #### xv6 Design Defects
 

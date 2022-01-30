@@ -1,4 +1,15 @@
+---
+title: MIT6.S081 Lecture6 Isolation and syscall
+data: 2021/12/01
+categories:
+  - MIT6.S081
+tags:
+  - MIT6.S081
+toc: true # 是否启用内容索引
+---
+
 ## Lec6- Isolation and syscall
+
 ### Supervisor registers
 * stap -- Store the page table's base address
 * stvec -- Store the address of trap program -- `trampolines`, note that this address is mapped on user's page table but without `PTE_U` which means the user can't modify it.
